@@ -1,0 +1,33 @@
+.time {
+    display: inline-flex;;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: underline 5px rgb(88, 97, 228);
+}
+
+.time > div {
+    margin: 9pc 0 0 30px;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    background: rgb(88, 97, 228);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.days,.hours {
+    padding: 0 25px 0 25px;
+}
+
+@media screen and (min-width:800px) {
+    .time {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

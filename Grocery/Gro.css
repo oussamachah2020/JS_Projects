@@ -1,0 +1,121 @@
+body {
+    background-color: azure;
+}
+
+.content-center {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    margin: 6pc 27pc 0 27pc;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.692);
+}
+
+.alert {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-size: 17px;
+}
+
+.alert-danger {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(221, 12, 12);
+    background-color: rgba(230, 111, 111, 0.733);
+}
+
+.alert-success {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(24, 219, 24);
+    background-color: rgb(179, 236, 179);
+}
+
+h1 {
+    color: rgb(73, 188, 233);
+}
+
+input {
+    border: none;
+    outline: none;
+    border: 1px solid rgb(73, 188, 233);
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    transform: translateX(6px);
+    border-right: none;
+}
+
+input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button[type="submit"] {
+    border: none;
+    outline: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(73, 188, 233);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 20px 10px 20px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    opacity: .7;
+}
+
+button[type="button"] {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    left: 9pc;
+}
+
+.edit-btn {
+    transform: translateX(18px);
+}
+
+button.edit-btn::after {
+    content: ":";
+    color: green;
+    font-size: 20px;
+}
+
+.clear-btn {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin: 50px 0 5px 0;
+    cursor: pointer;
+}
+
+.grocery-container {
+    transition: .5s;
+    visibility: hidden;
+}
+
+
+.grocery-container button {
+    position: relative;
+    bottom: 18px;
+}
+
+.grocery-container p {
+    transform: translate(-9.5pc,18px);
+}
+
+.show-content {
+    visibility: visible;
+}

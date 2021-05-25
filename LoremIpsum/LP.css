@@ -1,0 +1,57 @@
+h2 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(78, 78, 209);
+    letter-spacing: 5px;
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+    margin-top: 50px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+input {
+    width: 7%;
+    margin-left: 10px;
+}
+
+button {
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(78, 78, 209);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+article {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(12, 124, 168, 0.794);
+    margin: 50px 15pc 0 15pc;
+}
+
+@media (min-width:351px) and (max-width:846px) {
+    input {
+        width: 15%;
+    }
+
+    article {
+        margin: 50px 5pc 0 5pc;
+        text-align: center;
+    }
+}

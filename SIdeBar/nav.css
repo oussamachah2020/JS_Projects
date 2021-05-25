@@ -1,0 +1,78 @@
+body {
+    background: whitesmoke;
+}
+button {
+    border: none;
+    outline: none;
+    font-size: 35px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    color: rgb(0, 140, 255);
+    cursor: pointer;
+    animation: 1s infinite ease heart_beat;
+}
+
+@keyframes heart_beat {
+    from {transform: translateY(-10px);}
+    to {transform: translateY(5px);}
+}
+
+aside {
+    background-color: rgb(97, 162, 228);
+    width: 70%;
+    height: 100%;
+    position: fixed;
+    transition: .5s;
+    transform: translateX(-103%);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+h2 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 0 0 10px;
+}
+
+ a {
+    color: rgb(41, 41, 90);
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px 0 30px 20px;
+    display: flex;
+    font-weight: bold;
+    font-size: 17px;
+    transition: .5s;
+}
+
+.pages a:hover {
+    background-color: lightgrey;
+}
+
+span.second {
+    color: rgb(212, 87, 14);
+}
+
+img {
+    position: relative;
+    top: 6px;
+    left: 13%;
+    cursor: pointer;
+}
+
+.social_media {
+    padding: 10pc 0 20px 0;
+}
+
+.social_media  a {
+    display: inline;
+}
+
+@media screen and (min-width: 676px) {
+    aside {
+        width: 400px;
+    }
+}

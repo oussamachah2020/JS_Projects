@@ -1,0 +1,166 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navBtn {
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    display: none;
+}
+
+.navbar {
+    list-style: none;
+    width: 100%;
+    display: inline-flex;
+    transform: translate(55pc,0pc);
+}
+
+li {
+    padding: 10px 0 10px 10px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+li a:hover {
+    color: rgb(100, 98, 98);
+    transition: .5s;
+}
+
+#logo {
+    transform: translate(-70pc,-1.2pc);
+}
+
+.fix-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    background-image: url('image/nature.jpg');
+    background-size: cover;
+    height: 600px;
+    transform: translateY(-4pc);
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3pc;  
+  padding: 11pc 0 0 2pc;
+  letter-spacing: 10px;
+}
+
+p.text {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 50%;
+    padding-top: 15px;
+    font-weight: 300;
+    padding-left: 20pc;
+}
+
+.container button {
+    border: none;
+    outline: none;
+    margin: 20px 0 0 34pc;
+    padding: 12px 5pc 12px 5pc;
+    background: rgba(255, 255, 255, 0);
+    border: 1.5px solid white;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.container button:hover {
+    background-color: white;
+    color: black;
+}
+
+section {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    text-shadow: 5px 5px 30px black;
+}
+
+#MORE,#CONTACT {
+    margin: 35pc;
+}
+
+.main-body span {
+    color: rgb(0, 140, 255);
+    text-shadow: 5px 5px 30px rgb(0, 140, 255);
+}
+
+footer {
+    background-color: rgba(11, 32, 100, 0.863);
+    transform: translateY(8pc);
+}
+
+.copyright {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 5pc 0 5pc 0;
+}
+
+button.top {
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+    float: right;
+    position: relative;
+    bottom: 8.5pc;
+    right: 20px;
+    cursor: pointer;
+    transition: .5s;
+    animation: 1s infinite ease top_scroll;
+}
+
+@keyframes top_scroll {
+    from {transform: translateY(-10px);}
+    to {transform: translateY(5px);}
+}
+
+@media screen and (max-width:684px) {
+    li a  {
+        font-size: 14px;
+    }
+
+    .links-container {
+        transition: .5s;
+        transform: translateX(-200%);
+    }
+    
+    .hide-navbar {
+        transform: translateX(0);
+    }
+
+    .navBtn {
+        display: block;
+        position: relative;
+        left: 17pc;
+        margin: 10px;
+    }
+
+    #logo {
+        transform: translate(-7pc,-8.5pc);
+    }
+}
